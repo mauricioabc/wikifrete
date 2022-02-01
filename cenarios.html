@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>Cenários Logísticos</title>
+<link rel="sortcut icon" href="assets/images/ndd.png" type="image/png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/all.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">nddTreino</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Bem-vindo, <strong>Estagiário</strong></span><br>
+      <a href="chat.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="teste.html" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> Home</a>
+    <a href="fluxogramas.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fas fa-project-diagram"></i> Fluxogramas</a>
+    <a href="conceitos.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-book"></i> Conceitos</a>
+    <a href="DocumentosFiscais.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-receipt"></i> Documentos Fiscais</a>
+    <a href="cenarios.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-shipping-fast"></i> Cenários Logísticos</a>
+    <a href="teste.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    <br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i>Treinamento nddFrete</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-yellow w3-padding-16">
+        <div class="w3-left"><i class="fas fa-shipping-fast" style='font-size:48px'></i></div>
+        <div class="w3-clear"></div>
+        <h4>Cenários Logísticos</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <h5>Cenários aprendidos</h5>
+    <table class="w3-table w3-striped w3-hoverable w3-white">
+      <tr>
+        <td style="text-align: center;">
+          <img src="assets/images/pontoaponto.jpg">
+            <br>
+            <b>Ponto a ponto</b>
+        </td>
+        <td style="text-align: justify;">
+            Quando uma empresa precisa transportar materiais para suas filiais ou distribuidoras, é preciso contratar uma empresa de transporte que faça o transporte ponto a ponto. A empresa de transporte chega na sede do cliente, faz o carregamento da carga e, então, vai até filial, franquia ou distribuidora para fazer a entrega.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+          <img src="assets/images/redespacho.png">
+            <br>
+            <b>Redespacho</b>
+        </td>
+        <td>
+            Geralmente o redespacho acontece na logística de distribuição, sendo responsabilidade de um embarcador e uma transportadora. O redespacho pode ser uma maneira estratégica para realizar o transporte de cargas, reduzindo custos estreitando relações com parceiros e agilizando as entregas. Operações de redespacho são uma prática muito comum em países como o nosso, de proporções continentais, acontece quando um embarcador necessita realizar uma entrega para seu cliente e envolve mais de uma transportadora nesse processo, pois o destino final não está na sua região de atendimento. Uma transportadora contrata outra transportadora para efetuar parte da prestação de serviço.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+            <img src="assets/images/crossdocking.png">
+            <br>
+            <b>Cross Docking</b>
+        </td>
+        <td>
+            Cross Docking é o nome dado a um tipo de sistema de distribuição que funciona assim: quando alguém compra determinado produto no seu site, ele é enviado a um centro de distribuição ou armazém que, por meio de um sistema organizado de redistribuição, o envia para o cliente. Essa estratégia permite que você fique mais ágil para entregar o produto ao seu cliente e não precisa gastar com espaço físico de estoque. A contrapartida é que você vai precisa sincronizar ações muito cuidadosamente e assegurar que o produto chegará ileso e no prazo ao consumidor. Assim, o centro de distribuição se transforma em uma etapa crucial do sucesso da sua empresa. Na tradução literal, Cross Docking significa “Cruzando as docas”. O termo surgiu para explicar um sistema em que as mercadorias descarregadas pelos navios nos galpões eram transportadas por meio de esteiras automatizadas para caminhões já organizados por região.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+            <img src="assets/images/milkrun.png">
+            <br>
+            <b>Milk Run</b>
+        </td>
+        <td>
+            O Sistema Milk Run nasce dessa necessidade por inovação, sendo um método de aceleração de fluxo de materiais no ciclo produtivo que busca a integração entre logística e gestão da cadeia de suprimentos.
+
+            Milk Run significa, literalmente, corrida do leite. O método consiste em um transportador coletar em duas ou mais fazendas sem cruzar caminho na rota: retira o leite, e em seguida entrega-o em uma empresa.
+            
+            Esse sistema era adotado pelos produtores de leite nos EUA e atualmente vem sendo muito usado na indústria automobilística.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+            <img src="assets/images/justintime.jpg">
+            <br>
+            <b>Just in Time</b>
+        </td>
+        <td>
+            O Just in Time, que significa “momento certo”, é um sistema com objetivo de produzir a quantidade exata de um produto, de acordo com a demanda, de forma rápida e sem a necessidade da formação de estoques, fazendo com que o produto chegue a seu destino no tempo certo. O Just in Time tem um grande impacto em uma cadeia produtiva, de forma a alocar apenas a matéria-prima na quantidade certa para determinado produto em um determinado tempo. Esse sistema se aplica em produções por demanda, para evitar desperdícios, estoques desnecessários e custos extras.  
+        </td>
+      </tr>
+      <tr>
+        <tr>
+          <td style="text-align: center;">
+              <img src="assets/images/justintime.jpg">
+              <br>
+              <b>Subcontratação</b>
+          </td>
+          <td>
+              O Just in Time, que significa “momento certo”, é um sistema com objetivo de produzir a quantidade exata de um produto, de acordo com a demanda, de forma rápida e sem a necessidade da formação de estoques, fazendo com que o produto chegue a seu destino no tempo certo. O Just in Time tem um grande impacto em uma cadeia produtiva, de forma a alocar apenas a matéria-prima na quantidade certa para determinado produto em um determinado tempo. Esse sistema se aplica em produções por demanda, para evitar desperdícios, estoques desnecessários e custos extras.  
+          </td>
+        </tr>
+        <tr>
+          <tr>
+            <td style="text-align: center;">
+                <img src="assets/images/justintime.jpg">
+                <br>
+                <b>Reentrega</b>
+            </td>
+            <td>
+                O Just in Time, que significa “momento certo”, é um sistema com objetivo de produzir a quantidade exata de um produto, de acordo com a demanda, de forma rápida e sem a necessidade da formação de estoques, fazendo com que o produto chegue a seu destino no tempo certo. O Just in Time tem um grande impacto em uma cadeia produtiva, de forma a alocar apenas a matéria-prima na quantidade certa para determinado produto em um determinado tempo. Esse sistema se aplica em produções por demanda, para evitar desperdícios, estoques desnecessários e custos extras.  
+            </td>
+          </tr>
+          <tr>
+        <td style="text-align: center;">
+    </table><br>
+    <button class="w3-button w3-dark-grey" onclick="topFunction()" id="topBtn" title="top">Voltar ao topo <i class="fa fa-arrow-up"></i></button>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>Créditos</h4>
+    <p>By<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">  M&M  </a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+
+//Get the button:
+mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

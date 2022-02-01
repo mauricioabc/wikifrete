@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>Treinamento</title>
+<link rel="sortcut icon" href="assets/images/ndd.png" type="image/png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/all.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">nddTreino</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Bem-vindo, <strong>Estagiário</strong></span><br>
+      <a href="chat.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="teste.html" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>
+      Home
+    </a>
+    <a href="fluxogramas.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-project-diagram"></i>
+      Fluxogramas
+    </a>
+    <a href="conceitos.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-book"></i>
+      Conceitos
+    </a>
+    <a href="DocumentosFiscais.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-receipt"></i>
+      Documentos Fiscais
+    </a>
+    <a href="cenarios.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-shipping-fast"></i>
+      Cenários Logísticos
+    </a>
+    <a href="teste.html" class="w3-bar-item w3-button w3-padding"><i class="fas fa-sign-out-alt"></i>
+      Logout
+    </a>
+    <br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/NDD-Frete.ico">
+    <h5><b><i class="fa fa-dashboard"></i>Treinamento nddFrete</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <a href="fluxogramas.html" target="_blank">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fas fa-project-diagram" style='font-size:48px'></i></div>
+        <div class="w3-clear"></div>
+        <h4>Fluxogramas</h4>
+      </div>
+    </div>
+    </a>
+    <a href="conceitos.html" target="_blank">
+    <div class="w3-quarter" style="border-left: 30px;">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fas fa-book" style='font-size:48px'></i></div>
+        <div class="w3-clear"></div>
+        <h4>Conceitos</h4>
+      </div>
+    </div>
+    </a>
+    <a href="DocumentosFiscais.html" target="_blank">
+      <div class="w3-quarter" style="border-left: 30px;">
+        <div class="w3-container w3-green w3-padding-16">
+          <div class="w3-left"><i class="fas fa-receipt" style='font-size:48px'></i></div>
+          <div class="w3-clear"></div>
+        <h4>Documentos Fiscais</h4>
+      </div>
+    </div>
+    </a>
+    <a href="cenarios.html" target="_blank">
+      <div class="w3-quarter" style="border-left: 30px;">
+        <div class="w3-container w3-yellow w3-padding-16">
+          <div class="w3-left"><i class="fas fa-shipping-fast" style='font-size:48px; color:white'; ></i></div>
+          <div class="w3-clear"></div>
+        <h4>Cenários Logísticos</h4>
+      </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="w3-container">
+    <h5>Clientes aprendidos</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td><img src="assets/images/logo.png" style="width:250px"></td>
+        <td>Pertencente ao Grupo Edson Queiroz, a Esmaltec acumula mais de 55 anos de tradição.
+             É uma empresa que não para de evoluir, investindo sempre em tecnologia e capacitação profissional.</td>
+      </tr>
+      <tr>
+        <td><img src="assets/images/minalba-logo-C6747221B1-seeklogo.com.png" style="width:250px"></td>
+        <td>A Minalba Brasil, empresa do Grupo Edson Queiroz, está no dia a dia dos brasileiros. 
+            A empresa é detentora das marcas Indaiá, Minalba, São Lourenço, Petrópolis, Refri, Citrus e do energético Night Power. </td>
+      </tr>
+      <tr>
+        <td><img src="assets/images/auto1024x1024_XHiNGUyEY25_.png" style="width:250px"></td>
+        <td>Líder na distribuição de gás domiciliar.</td>
+      </tr>
+      <tr>
+        <td><img src="assets/images/800px-Reckitt_Benckiser.svg.png" style="width:250px"></td>
+        <td>Nosso mundo está sempre mudando. Por isso, é reconfortante saber que podemos sempre contar com algumas coisas para cuidar ao máximo de nós mesmos e das pessoas que amamos.
+            Essa confiança nos inspira. Somos uma comunidade global e diversa, composta por mais de 43.000 pessoas unidas por um propósito inspirador: um mundo mais limpo e mais saudável para todos nós.
+            Nossa empresa é composta pelas marcas de produtos de higiene, saúde e nutrição mais amadas e confiáveis de todo o mundo.</td>
+      </tr>
+      <tr>
+        <td><img src="assets/images/cooxupe.png" style="width:250px"></td>
+        <td>Com mais de 85 anos de história, a Cooxupé (Cooperativa Regional de Cafeicultores em Guaxupé Ltda) iniciou suas atividades em 1932, 
+            com a fundação de uma Cooperativa de Crédito Agrícola, transformada em 1957 em Cooperativa de Cafeicultores.</td>
+      </tr>
+      <tr>
+        <td><img src="assets/images/penske.png" style="width:250px"></td>
+        <td>A Penske Logistics tem anos de experiência no desenvolvimento de soluções vencedoras adaptadas para cada cliente atendido. Nosso conhecimento do setor e capacidades técnicas nos permitem implementar as mais avançadas soluções de cadeia de suprimentos atualmente em uso. 
+          Desde a gestão de seus fornecedores até a entrega do produto acabado, nós o ajudamos a ter sucesso a cada passo do caminho.</td>
+      </tr>
+    </table><br>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Autoria</h5>
+    <ul class="w3-ul w3-card-4 w3-white">
+      <li class="w3-padding-16">
+        <img src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Matheus de Andrade</span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Mauricio de Arruda Rodrigues
+        </span><br>
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5>Comentário dos autores</h5>
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Matheus de Andrade<span class="w3-opacity w3-medium"> 11 de Agosto, 2021, 16:54</span></h4>
+        <p>Aprendizado é sempre importante.</p><br>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="https://ndd.tech/wp-content/uploads/2021/01/cropped-Fav300.png" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Mauricio de Arruda Rodrigues<span class="w3-opacity w3-medium"> 11 de Agosto, 2021, 16:55</span></h4>
+        <p>Se não está errado, está certo.</p><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <div class="w3-row">
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-green">Embarcador</h5>
+        <p><a href="https://www.esmaltec.com.br/" target="_blank">  Esmaltec  </a></p>
+        <p><a href="https://minalbabrasil.com.br/" target="_blank">  Minalba  </a></p>
+        <p><a href="https://nacionalgas.com.br/" target="_blank">  Nacional Gás </a> /<a href="https://liquigas.com.br/" target="_blank">  Liquigás </a></p>
+        <p><a href="https://www.reckitt.com/br/" target="_blank">  RB </a></p>
+        <p><a href="https://www.cooxupe.com.br/" target="_blank">  Cooxupé  </a></p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-red">Operador</h5>
+        <p><p><a href="https://www.penskelogistics.com/south-america/pt/" target="_blank">  Penske  </a></p></p>
+        <p><p><a href="https://www.gruposada.com.br/" target="_blank">  Sada  </a></p></p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-yellow">Atores</h5>
+        <p><a href="https://www.totvs.com/blog/erp/o-que-e-erp/" target="_blank">  ERP  </a></p>
+        <p><a href="https://www.oracle.com/br/scm/logistics/transportation-management/" target="_blank">  OTM  </a></p>
+        <p><a href="https://ndd.tech/ndd-frete/" target="_blank">  nddFrete  </a></p>
+        <p><a href="https://ndd.tech/ndd-cargo/" target="_blank">  nddCargo  </a></p>
+        <p><a href="https://ajuda.tryideas.com.br/books/documentos-fiscais/page/tipo-de-transportador-etc---tac---ctc" target="_blank">  ETC  </a></p>
+        <p><a href="https://ajuda.tryideas.com.br/books/documentos-fiscais/page/tipo-de-transportador-etc---tac---ctc" target="_blank">  TAC  </a></p>
+        <p><a href="https://www.ilog.com.br/" target="_blank">  iLog  </a></p>
+        <p><a href="https://www.gov.br/antt/pt-br" target="_blank">  ANTT  </a></p>
+        <p><a href="https://bpp.com.br/" target="_blank">  BPP  </a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>Créditos</h4>
+    <p>By<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">  M&M  </a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<HTML>
+  <HEAD>
+  <title>Login nddTreino</title>
+  <link rel="sortcut icon" href="assets/images/ndd.png" type="image/png"/>
+  <meta http-equiv=Content-Type content="text/html"; charset="UTF-8">
+  <link rel="stylesheet" href="teste.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+
+  <style>
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(white, rgba(235, 60, 16, 0.925));
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(253, 75, 31, 0.836);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgba(253, 75, 31, 0.836);
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgba(253, 75, 31, 0.836);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(253, 75, 31, 0.836);
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgba(253, 75, 31, 0.836);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgba(253, 75, 31, 0.836);
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgba(253, 75, 31, 0.836);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: rgba(253, 75, 31, 0.836);
+  color: rgba(253, 75, 31, 0.836);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(253, 75, 31, 0.836),
+              0 0 25px rgba(253, 75, 31, 0.836),
+              0 0 50px rgba(253, 75, 31, 0.836),
+              0 0 100px rgba(253, 75, 31, 0.836);
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(253, 75, 31, 0.836));
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(253, 75, 31, 0.836));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgba(253, 75, 31, 0.836));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,rgba(253, 75, 31, 0.836));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+  </style>
+
+  <script language=JavaScript>
+
+  function Login(){
+  var done=0;
+  var username=document.login.username.value;
+  username=username.toLowerCase();
+  var password=document.login.password.value;
+  password=password.toLowerCase();
+  
+  if (username=="admin" && password=="1234") { window.location="index.html"; done=1; }
+  if (username=="mauricio" && password=="1234") { window.location="index.html"; done=1; }
+  if (username=="matheus" && password=="1234") { window.location="index.html"; done=1; }
+  if (username=="fluxos" && password=="1234") { window.location="fluxogramas.html"; done=1; }
+  if (username=="conceitos" && password=="1234") { window.location="conceitos.html"; done=1; }
+  if (username=="docs" && password=="1234") { window.location="DocumentosFiscais.html"; done=1; }
+  if (username=="cenarios" && password=="1234") { window.location="cenarios.html"; done=1; }
+  if (done==0) { alert("Login Inválido"); }
+  }
+  
+  </script>
+
+
+<body class="login-body">
+  <div class="image" style="text-align: center;">
+    <img src="assets/images/NDD-Frete.png">
+  </div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form name="login">
+      <div class="user-box">
+        <input type="text" name="username">
+        <label>Usuário</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password">
+        <label>Senha</label>
+      </div>
+      <a href='#' onclick=Login()>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Entrar
+      </a>
+    </form>
+  </div>
+</body>
+
+</HTML>
